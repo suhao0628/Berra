@@ -67,16 +67,16 @@ var config *Config
 
 func LoadConfig() error {
 	// 本地部署
-	// if _, err := toml.DecodeFile("F:\\go\\Berra\\configs\\config_local.toml", config); err != nil {
-	// 	log.Fatal(err.Error())
-	// 	return err
-	// }
-	// Ubuntu22.04云服务器部署
-	if _, err := toml.DecodeFile("/root/project/Berra/configs/config_local.toml", config); err != nil {
+	if _, err := toml.DecodeFile("C:\\Users\\suhao\\Desktop\\Berra\\configs\\config.toml", config); err != nil { //C:\Users\suhao\Desktop\Berra\configs\config.toml
 		log.Fatal(err.Error())
 		return err
 	}
-	return nil
+	// Ubuntu22.04云服务器部署
+	// if _, err := toml.DecodeFile("Berra/configs/config_local.toml", config); err != nil { ///root/project/Berra/configs/config_local.toml
+	// 	log.Fatal(err.Error())
+	// 	return err
+	// }
+	 return nil
 }
 
 func GetConfig() *Config {
