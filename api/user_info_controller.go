@@ -3,7 +3,7 @@ package api
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"Berra/internal/dto/request"
+	"Berra/internal/dto/request/auth"
 	"Berra/internal/service/gorm"
 	"Berra/pkg/constants"
 	"Berra/pkg/zlog"

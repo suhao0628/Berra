@@ -2,8 +2,8 @@ package gorm
 
 import (
 	"Berra/internal/dao"
-	"Berra/internal/dto/request"
-	"Berra/internal/dto/respond"
+	"Berra/internal/dto/request/auth"
+	"Berra/internal/dto/respond/auth"
 	"Berra/internal/model"
 	myredis "Berra/internal/service/redis"
 	"Berra/pkg/constants"
