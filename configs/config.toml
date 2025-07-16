@@ -9,3 +9,12 @@ port = 3306
 user = "root"
 password = ""
 databaseName = "berra"
+
+[kafkaConfig]
+messageMode = "channel"# 消息模式 channel or kafka
+hostPort = "127.0.0.1:9092" # "127.0.0.1:9092,127.0.0.1:9093,127.0.0.1:9094" 多个kafka服务器
+loginTopic = "berra_login"
+chatTopic = "berra_msg"
+logoutTopic = "berra_logout"
+partition = 0 # kafka partition
+timeout = 1 # 单位秒
